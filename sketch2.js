@@ -38,7 +38,9 @@ function setup() {
 }
 
 function draw() {
-  background(20, 20, 40);
+  background(0, 0, 0);
+  fill(255);
+  rect(width / 3, 0, 5, height);
 }
 
 function returnIndex() {
