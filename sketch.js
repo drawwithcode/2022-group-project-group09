@@ -2,6 +2,7 @@ const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
 let container, button, counterP, button2, counterP2, button3, counterP3;
+var posX, posY, checkX, checkY;
 
 function setup() {
   container = createElement("div");
@@ -15,7 +16,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(windowWidth / 2, 600);
+  container.position(windowWidth / 6, 600);
   container.mousePressed(openLearn);
 
   //pausa pausa
@@ -51,10 +52,61 @@ function setup() {
   container.mousePressed(openDiscover1);
 
   createCanvas(windowWidth, windowHeight);
+  posX = width / 2;
+  posY = height / 2;
+  noStroke();
 }
 
 function draw() {
-  background(220, 20, 240);
+  background(20);
+  fill(255);
+  rect(width / 3, 0, 5, height);
+  fill(255);
+  rect((width * 2) / 3, 0, 5, height);
+  fill(255);
+  rect(0, height / 2, width, 5);
+
+  posicionar();
+  fill(255);
+  // ellipse(width / 6, height / 4, 200, 140);
+  // arc(width / 6, height / 4, 300, 180, 0, PI, OPEN);
+
+  stroke(255);
+  noFill();
+
+  strokeWeight(4);
+  point(100, 250);
+  point(150, 200);
+  point(350, 200);
+  point(400, 250);
+
+  strokeWeight(1);
+  beginShape();
+
+  curveVertex(100, 250);
+  curveVertex(150, 200);
+  curveVertex(350, 200);
+  curveVertex(400, 250);
+  endShape();
+
+  noStroke();
+  fill(20);
+  circle(posX - 550, posY - 150, 90);
+
+  fill(255);
+  circle((width * 3) / 6, (height * 3) / 4, 180);
+  fill(20);
+  circle(posX, posY + 200, 90);
+
+  fill(255);
+  circle((width * 5) / 6, height / 4, 180);
+  fill(20);
+  circle(posX + 500, posY - 150, 90);
+
+  fill(255);
+  circle((width * 5) / 6, (height * 3) / 4, 180);
+  fill(20);
+  circle(posX + 500, posY + 200, 90);
 }
 
 function openLearn() {
@@ -67,4 +119,9 @@ function openAbout() {
 
 function openDiscover1() {
   window.open("discover1.html", "_self");
+}
+
+function posicionar() {
+  posX = map(mouseX, 0, width, width / 2 - 60, width / 2 + 60);
+  posY = map(mouseY, 0, height, height / 2 - 60, height / 2 + 60);
 }
