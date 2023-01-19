@@ -3,15 +3,26 @@ let url = new URL(urlString); // Convert it into a parsable URL Object
 
 let container, button, counterP, button2, counterP2;
 
-let trails = [];
-let currentPath = [];
-let x, y, breadth;
+const num = 720;
+const x = new Float32Array(num);
+const y = new Float32Array(num);
+const vx = new Float32Array(num);
+const vy = new Float32Array(num);
+const maxDistSq = 20 ** 2;
+const minDistSq = 16 ** 2;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(200, 20, 40);
+  angleMode(DEGREES);
   rectMode(CENTER);
-  Init();
+
+  for (let i = num; i--; ) {
+    const a = i / 2;
+    vx[i] = cos(a);
+    vy[i] = sin(a);
+    x[i] = width / 2 + (vx[i] * width) / 2;
+    y[i] = height / 2 + (vy[i] * height) / 2;
+  }
 
   container = createElement("div");
   container.addClass("myContainer");
@@ -22,7 +33,7 @@ function setup() {
   container.child(button);
   counterP.parent(container);
 
-  // let enter = createButton("COME AND SEE");
+  // let container = createButton("MENU'");
   container.size(320, 50);
   container.position(100, 100);
   container.mousePressed(returnIndex);
@@ -38,70 +49,28 @@ function setup() {
   container.child(button2);
   counterP2.parent(container);
 
-  // let enter = createButton("COME AND SEE");
+  // let container = createButton("DISCOVER");
   container.size(320, 50);
   container.position(1300, 600);
   container.mousePressed(openDiscover2);
 }
 
 function draw() {
-  for (let i = 50; i--; ) Update();
+  background("black");
+  stroke("white");
+  for (let i = num; i--; ) {
+    for (let j = i; j--; ) {
+      d = (x[i] - x[j]) ** 2 + (y[i] - y[j]) ** 2;
+      if (minDistSq < d && d < maxDistSq) line(x[i], y[i], x[j], y[j]);
+    }
+  }
+  for (let i = num; i--; ) {
+    x[i] += vx[i];
+    y[i] += vy[i];
+    if (x[i] < 0 || x[i] > width) vx[i] *= -1;
+    if (y[i] < 0 || y[i] > height) vy[i] *= -1;
+  }
 }
-
-mousePressed = () => {
-  background(200, 20, 40);
-  trails.length = 0;
-  currentPath.length = 0;
-  noiseSeed();
-  Init();
-};
-
-const Init = () => {
-  if (currentPath.length > 0) {
-    trails = trails.concat(currentPath);
-  }
-  x = random(width);
-  y = random(height);
-  breadth = random(5, 50);
-
-  fill(color(random(256), random(256), random(256)));
-  currentPath.length = 0;
-};
-
-const Update = () => {
-  const n = noise(x / width, y / height);
-  const angle = n * TWO_PI * 1.5;
-  x += cos(angle) * 2;
-  y += sin(angle) * 2;
-
-  if (x < 0 || y < 0 || x > width || y > height) {
-    Init();
-    return;
-  }
-
-  const collide = trails.some(
-    (t) => (t.x - x) ** 2 + (t.y - y) ** 2 < (t.breadth / 2 + breadth / 2) ** 2
-  );
-  if (collide) {
-    Init();
-    return;
-  }
-
-  currentPath.push({
-    x: x,
-    y: y,
-    breadth: breadth,
-  });
-
-  push();
-  translate(x, y);
-  rotate(angle);
-  noStroke();
-  rect(0, 0, 1, 0.8 * breadth);
-  stroke("black");
-  rect(0, 0.4 * breadth, 1, 1);
-  pop();
-};
 
 function returnIndex() {
   window.open("index.html", "_self");
