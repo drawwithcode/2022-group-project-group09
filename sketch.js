@@ -68,8 +68,28 @@ function draw() {
 
   posicionar();
   fill(255);
-  ellipse(width / 6, height / 4, 200, 140);
-  // arc(width / 6, height / 4, 200, 140, 0, PI, OPEN);
+  // ellipse(width / 6, height / 4, 200, 140);
+  // arc(width / 6, height / 4, 300, 180, 0, PI, OPEN);
+
+  stroke(255);
+  noFill();
+
+  strokeWeight(4);
+  point(100, 250);
+  point(150, 200);
+  point(350, 200);
+  point(400, 250);
+
+  strokeWeight(1);
+  beginShape();
+
+  curveVertex(100, 250);
+  curveVertex(150, 200);
+  curveVertex(350, 200);
+  curveVertex(400, 250);
+  endShape();
+
+  noStroke();
   fill(20);
   circle(posX - 550, posY - 150, 90);
 
