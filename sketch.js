@@ -1,8 +1,13 @@
 const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
+let img;
 let container, button, counterP, button2, counterP2, button3, counterP3;
 var posX, posY, checkX, checkY;
+
+function preload() {
+  img = loadImage("assets/occhietto.png");
+}
 
 function setup() {
   container = createElement("div");
@@ -55,10 +60,12 @@ function setup() {
   posX = width / 2;
   posY = height / 2;
   noStroke();
+  imageMode(CENTER);
 }
 
 function draw() {
   background(20);
+
   fill(255);
   rect(width / 3, 0, 5, height);
   fill(255);
@@ -67,44 +74,52 @@ function draw() {
   rect(0, height / 2, width, 5);
 
   posicionar();
-  fill(255);
+  // fill(255);
   // ellipse(width / 6, height / 4, 200, 140);
   // arc(width / 6, height / 4, 300, 180, 0, PI, OPEN);
 
-  stroke(255);
-  noFill();
+  // stroke(255);
+  // noFill();
 
-  strokeWeight(4);
-  point(100, 250);
-  point(150, 200);
-  point(350, 200);
-  point(400, 250);
+  // strokeWeight(4);
+  // point(100, 250);
+  // point(150, 200);
+  // point(350, 200);
+  // point(400, 250);
 
-  strokeWeight(1);
-  beginShape();
+  // strokeWeight(1);
+  // beginShape();
 
-  curveVertex(100, 250);
-  curveVertex(150, 200);
-  curveVertex(350, 200);
-  curveVertex(400, 250);
-  endShape();
+  // curveVertex(100, 250);
+  // curveVertex(150, 200);
+  // curveVertex(350, 200);
+  // curveVertex(400, 250);
+  // endShape();
 
-  noStroke();
+  // noStroke();
+  image(img, width / 6, height / 4, 300, 150);
+
   fill(20);
   circle(posX - 550, posY - 150, 90);
 
-  fill(255);
-  circle((width * 3) / 6, (height * 3) / 4, 180);
+  // fill(255);
+  // circle((width * 3) / 6, (height * 3) / 4, 180);
+  image(img, (width * 3) / 6, (height * 3) / 4, 300, 150);
+
   fill(20);
   circle(posX, posY + 200, 90);
 
-  fill(255);
-  circle((width * 5) / 6, height / 4, 180);
+  // fill(255);
+  // circle((width * 5) / 6, height / 4, 180);
+  image(img, (width * 5) / 6, height / 4, 300, 150);
+
   fill(20);
   circle(posX + 500, posY - 150, 90);
 
-  fill(255);
-  circle((width * 5) / 6, (height * 3) / 4, 180);
+  // fill(255);
+  // circle((width * 5) / 6, (height * 3) / 4, 180);
+  image(img, (width * 5) / 6, (height * 3) / 4, 300, 150);
+
   fill(20);
   circle(posX + 500, posY + 200, 90);
 }
