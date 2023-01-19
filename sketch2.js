@@ -4,6 +4,7 @@ let url = new URL(urlString); // Convert it into a parsable URL Object
 let container, button, counterP, button2, counterP2;
 
 function setup() {
+  createCanvas(windowWidth, windowHeight);
   container = createElement("div");
   container.addClass("myContainer");
 
@@ -33,8 +34,6 @@ function setup() {
   container.size(320, 50);
   container.position(1300, 600);
   container.mousePressed(openDiscover2);
-
-  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
