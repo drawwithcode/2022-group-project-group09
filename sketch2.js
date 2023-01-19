@@ -1,30 +1,33 @@
 const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
-let container, button, counterP, button2, counterP2;
+let container, counterP, counterP2;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  container = createElement("div");
-  container.addClass("myContainer");
 
-  button = createButton("MENU'");
+  container = createElement("div");
+  //container.addClass("myContainer");
+
+  var button = createButton("");
+  button.id(button1);
   counterP = createP();
 
-  container.child(button);
+  container.child(button1);
   counterP.parent(container);
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(100, 100);
+  container.position(50, 50);
   container.mousePressed(returnIndex);
 
   //pausa pausa
 
   container = createElement("div");
-  container.addClass("myContainer");
+  // container.addClass("myContainer");
 
-  button2 = createButton("DISCOVER");
+  var button = createButton("");
+  button.id(button2);
   counterP2 = createP();
 
   container.child(button2);

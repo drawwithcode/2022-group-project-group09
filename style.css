@@ -8,7 +8,7 @@ canvas {
   display: block;
 }
 
-button {
+/* button {
   background-color: yellow;
   border: none;
   position: absolute;
@@ -19,4 +19,53 @@ button {
   font-size: 30px;
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+#button1 {
+  outline: none;
+  cursor: context-menu;
+  text-align: center;
+  position: absolute;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+
+  padding: 10px 20px;
+}
+
+#button1:hover {
+  background-color: yellow;
+}
+
+#button2 {
+  background-color: brown;
+  border: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 20px 50px;
+  font-size: 30px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  min-height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+.icon-container {
+  padding-right: 16px;
+  margin-left: auto;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.icon-container img {
+  height: 24px;
 }
