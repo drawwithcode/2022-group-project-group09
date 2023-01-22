@@ -1,9 +1,11 @@
+var r;
+
 function createBlurMask(width, height, r) {
   const g = createGraphics(width, height);
   // g.noStroke();
   g.background(0);
 
-  g.drawingContext.filter = `blur(${r}px)`;
+  g.drawingContext.filter = `blur(${r + 100}px)`;
 
   g.drawingContext.ellipse(
     width / 2,
