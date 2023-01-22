@@ -1,7 +1,7 @@
 const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
-let container, button, counterP, button2, counterP2;
+let container, counterP, counterP2;
 
 const num = 720;
 const x = new Float32Array(num);
@@ -25,12 +25,13 @@ function setup() {
   }
 
   container = createElement("div");
-  container.addClass("myContainer");
+  // container.addClass("myContainer");
 
-  button = createButton("MENU'");
+  var button = createButton("");
+  button.id(button1);
   counterP = createP();
 
-  container.child(button);
+  container.child(button1);
   counterP.parent(container);
 
   // let container = createButton("MENU'");
@@ -41,9 +42,10 @@ function setup() {
   //pausa pausa
 
   container = createElement("div");
-  container.addClass("myContainer");
+  // container.addClass("myContainer");
 
-  button2 = createButton("DISCOVER");
+  var button = createButton("");
+  button.id(button2);
   counterP2 = createP();
 
   container.child(button2);
@@ -51,8 +53,8 @@ function setup() {
 
   // let container = createButton("DISCOVER");
   container.size(320, 50);
-  container.position(1300, 600);
-  container.mousePressed(openDiscover2);
+  container.position(1350, 650);
+  container.mousePressed(openDiscover3);
 }
 
 function draw() {
@@ -76,6 +78,6 @@ function returnIndex() {
   window.open("index.html", "_self");
 }
 
-function openDiscover2() {
+function openDiscover3() {
   window.open("discover3.html", "_self");
 }

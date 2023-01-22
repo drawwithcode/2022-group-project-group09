@@ -22,6 +22,7 @@ canvas {
 } */
 
 #button1 {
+  background-color: black;
   outline: none;
   cursor: context-menu;
   text-align: center;
@@ -29,24 +30,59 @@ canvas {
   text-decoration: none;
   font: bold 12px Arial, Helvetica, sans-serif;
 
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
 
 #button1:hover {
-  background-color: yellow;
+  opacity: 40%;
 }
 
 #button2 {
-  background-color: brown;
-  border: none;
+  background-color: black;
+  outline: none;
+  cursor: context-menu;
+  text-align: center;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  padding: 20px 50px;
-  font-size: 30px;
-  border-radius: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+
+  /* padding: 10px 20px; */
+}
+
+#button2:hover {
+  opacity: 40%;
+}
+
+#learn {
+  color: white;
+  background-color: black;
+  outline: none;
+  cursor: context-menu;
+  text-align: center;
+
+  text-decoration: none;
+  font: bold 60px Arial, Helvetica, sans-serif;
+
+  /* padding: 10px 20px; */
+}
+#learn:hover {
+  font-style: italic;
+}
+
+#about {
+  color: white;
+  background-color: black;
+  outline: none;
+  cursor: context-menu;
+  text-align: center;
+
+  text-decoration: none;
+  font: bold 60px Arial, Helvetica, sans-serif;
+
+  /* padding: 10px 20px; */
+}
+#about:hover {
+  font-style: italic;
 }
 
 .navbar {
