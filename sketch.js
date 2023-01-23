@@ -2,7 +2,7 @@ const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
 let img;
-let container, button, counterP, button2, counterP2, button3, counterP3;
+let container, counterP, counterP2, counterP3;
 var posX, posY, checkX, checkY;
 
 function preload() {
@@ -10,53 +10,57 @@ function preload() {
 }
 
 function setup() {
-  container = createElement("div");
-  container.addClass("myContainer");
+  createCanvas(windowWidth, windowHeight);
 
-  button = createButton("LEARN");
+  container = createElement("div");
+  // container.addClass("myContainer");
+
+  var button = createButton("LEARN");
+  button.id(learn);
   counterP = createP();
 
-  container.child(button);
+  container.child(learn);
   counterP.parent(container);
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(windowWidth / 6, 600);
+  container.position(width / 9, 450);
   container.mousePressed(openLearn);
 
   //pausa pausa
 
   container = createElement("div");
-  container.addClass("myContainer2");
+  // container.addClass("myContainer2");
 
-  button2 = createButton("ABOUT");
+  var button = createButton("");
+  button.id(about);
   counterP2 = createP();
 
-  container.child(button2);
+  container.child(about);
   counterP2.parent(container);
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(windowWidth / 2, 100);
+  container.position((width * 4) / 9, 80);
   container.mousePressed(openAbout);
 
   //pausa pausa
 
   container = createElement("div");
-  container.addClass("myContainer3");
+  // container.addClass("myContainer3");
 
-  button3 = createButton("DISCOVER");
+  var button = createButton("");
+  button.id(button2);
   counterP3 = createP();
 
-  container.child(button3);
+  container.child(button2);
   counterP3.parent(container);
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(1300, 600);
+  container.position(1350, 650);
   container.mousePressed(openDiscover1);
 
-  createCanvas(windowWidth, windowHeight);
   posX = width / 2;
   posY = height / 2;
   noStroke();
@@ -64,7 +68,7 @@ function setup() {
 }
 
 function draw() {
-  background(20);
+  background(0);
 
   fill(255);
   rect(width / 3, 0, 5, height);

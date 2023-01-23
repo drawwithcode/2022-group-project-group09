@@ -15,7 +15,7 @@ function setup() {
   button = createButton("BACK");
   counterP = createP();
 
-  container.child(button);
+  container.child(button1);
   counterP.parent(container);
 
   // let enter = createButton("COME AND SEE");

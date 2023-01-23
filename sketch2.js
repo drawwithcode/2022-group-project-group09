@@ -35,7 +35,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(1300, 600);
+  container.position(1350, 650);
   container.mousePressed(openDiscover2);
 }
 
