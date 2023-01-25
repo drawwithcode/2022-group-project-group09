@@ -60,6 +60,7 @@ function setup() {
 function draw() {
   background("black");
   stroke("white");
+
   for (let i = num; i--; ) {
     for (let j = i; j--; ) {
       d = (x[i] - x[j]) ** 2 + (y[i] - y[j]) ** 2;
