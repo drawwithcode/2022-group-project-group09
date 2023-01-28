@@ -40,9 +40,9 @@ function setup() {
 }
 
 function draw() {
-  background(0, 0, 0);
-  fill(255);
-  rect(width / 3, 0, 5, height);
+  // background(0, 0, 0);
+  // fill(255);
+  // rect(width / 3 - 55, 0, 5, height);
 }
 
 function returnIndex() {

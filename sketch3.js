@@ -36,8 +36,8 @@ function setup() {
   counterP.parent(container);
 
   // let container = createButton("MENU'");
-  container.size(320, 50);
-  container.position(100, 100);
+  container.size(100, 50);
+  container.position(50, 50);
   container.mousePressed(returnIndex);
 
   //pausa pausa
