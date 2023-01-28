@@ -12,7 +12,7 @@ function setup() {
   container = createElement("div");
   container.addClass("myContainer");
 
-  button = createButton("BACK");
+  button = createButton("");
   counterP = createP();
 
   container.child(button1);

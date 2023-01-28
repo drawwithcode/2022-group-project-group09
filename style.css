@@ -114,8 +114,8 @@ body {
 
 #titolo {
   position: absolute;
-  padding-top: 45px;
-  padding-left: 15%;
+  padding-top: 90px;
+  padding-left: 11%;
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
@@ -125,21 +125,14 @@ body {
 #didascalia {
   position: absolute;
   padding-top: 80px;
-  padding-left: 40%;
-  padding-right: 10%;
+  padding-left: 25%;
+  padding-right: 12%;
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
+  line-height: 1;
+  text-align: left;
 }
 
-#titolo2 {
-  position: absolute;
-  padding-top: 200px;
-  padding-left: 20%;
-  color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  line-height: 50%;
-}
 /* 
 #concept {
   line-height: 80%;
@@ -151,3 +144,38 @@ body {
 .nuovofont {
   font-family: monospace;
 } */
+
+#HTMLButtonElement {
+  visibility: hidden;
+  /* appearance: hidden;
+  writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  font-size: ;
+  font-family: ;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0em;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial; */
+}
