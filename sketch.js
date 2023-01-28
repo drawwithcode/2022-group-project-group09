@@ -103,28 +103,28 @@ function draw() {
   // noStroke();
   image(img, width / 6, height / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX - 550, posY - 150, 90);
 
   // fill(255);
   // circle((width * 3) / 6, (height * 3) / 4, 180);
   image(img, (width * 3) / 6, (height * 3) / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX, posY + 200, 90);
 
   // fill(255);
   // circle((width * 5) / 6, height / 4, 180);
   image(img, (width * 5) / 6, height / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX + 500, posY - 150, 90);
 
   // fill(255);
   // circle((width * 5) / 6, (height * 3) / 4, 180);
   image(img, (width * 5) / 6, (height * 3) / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX + 500, posY + 200, 90);
 }
 
