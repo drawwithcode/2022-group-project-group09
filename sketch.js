@@ -1,12 +1,14 @@
 const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
+let song;
 let img;
 let container, counterP, counterP2, counterP3;
 var posX, posY, checkX, checkY;
 
 function preload() {
   img = loadImage("assets/occhietto.png");
+  song = loadSound("assets/Alberto Balsalm.mp3");
 }
 
 function setup() {

@@ -2,7 +2,7 @@ const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
 let container, counterP, counterP2;
-
+let canzonedisfondo;
 const num = 720;
 const x = new Float32Array(num);
 const y = new Float32Array(num);
@@ -11,8 +11,13 @@ const vy = new Float32Array(num);
 const maxDistSq = 20 ** 2;
 const minDistSq = 16 ** 2;
 
+function preload() {
+  canzonedisfondo = loadSound("assets/Alberto Balsalm.mp3");
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
   angleMode(DEGREES);
   rectMode(CENTER);
 
@@ -22,7 +27,6 @@ function setup() {
     vy[i] = sin(a);
     x[i] = width / 2 + (vx[i] * width) / 2;
     y[i] = height / 2 + (vy[i] * height) / 2;
-    song = loadSound("assets/lucky_dragons_-_power_melody.mp3");
   }
 
   container = createElement("div");
@@ -77,10 +81,18 @@ function draw() {
     loop();
   }
 }
+
 function returnIndex() {
   window.open("index.html", "_self");
 }
 
 function openDiscover3() {
   window.open("discover3.html", "_self");
+}
+
+function mousePressed() {
+  canzonedisfondo.play();
+  canzonedisfondo.loop();
+  canzonedisfondo.setVolume(0.3);
+  userStartAudio();
 }
