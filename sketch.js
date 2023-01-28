@@ -106,7 +106,7 @@ function draw() {
   image(img, width / 6, height / 4, 300, 150);
 
   fill(0);
-  circle(posX - 550, posY - 200, 90);
+  circle(posX - 500, posY - 200, 90);
 
   // fill(255);
   // circle((width * 3) / 6, (height * 3) / 4, 180);

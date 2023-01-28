@@ -92,7 +92,6 @@ function openDiscover3() {
 
 function mousePressed() {
   canzonedisfondo.play();
-  canzonedisfondo.loop();
-  canzonedisfondo.setVolume(0.3);
+  canzonedisfondo.setVolume(50);
   userStartAudio();
 }

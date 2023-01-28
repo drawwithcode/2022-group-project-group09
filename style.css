@@ -179,3 +179,12 @@ body {
   border-color: buttonborder;
   border-image: initial; */
 }
+
+#sound {
+  position: absolute;
+  padding-top: 80px;
+  padding-left: 40%;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
