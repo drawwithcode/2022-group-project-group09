@@ -15,7 +15,7 @@ function setup() {
   container = createElement("div");
   // container.addClass("myContainer");
 
-  var button = createButton("LEARN");
+  var button = createButton("");
   button.id(learn);
   counterP = createP();
 

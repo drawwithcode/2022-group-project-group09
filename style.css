@@ -39,7 +39,12 @@ canvas {
 
 #button2 {
   background: none;
+<<<<<<< HEAD
   border: none;
+=======
+  border:none;
+  outline: none;
+>>>>>>> 1d821397be3062eb5c6700dc0fc09185df30e7c0
   cursor: context-menu;
   text-align: center;
   position: absolute;
@@ -56,7 +61,11 @@ canvas {
 #learn {
   color: white;
   background: none;
+<<<<<<< HEAD
   border: none;
+=======
+  border:none;
+>>>>>>> 1d821397be3062eb5c6700dc0fc09185df30e7c0
   cursor: context-menu;
   text-align: center;
   text-decoration: none;
@@ -71,7 +80,11 @@ canvas {
 #about {
   color: white;
   background: none;
+<<<<<<< HEAD
   border: none;
+=======
+  border:none;
+>>>>>>> 1d821397be3062eb5c6700dc0fc09185df30e7c0
   cursor: context-menu;
   text-align: center;
 
