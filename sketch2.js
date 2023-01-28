@@ -34,8 +34,8 @@ function setup() {
   counterP2.parent(container);
 
   // let enter = createButton("COME AND SEE");
-  container.size(320, 50);
-  container.position(1350, 650);
+  container.size(100, 50);
+  container.position((width * 8) / 9, (height * 2) / 2.3);
   container.mousePressed(openDiscover2);
 }
 
