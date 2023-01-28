@@ -2,11 +2,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  background-repeat: repeat;
 }
 
-canvas {
+/* canvas {
   display: block;
-}
+} */
 
 /* button {
   background-color: yellow;
@@ -110,3 +112,36 @@ canvas {
   position: fixed;
   z-index: 0;
 }
+
+#titolo {
+  position: absolute;
+  padding-top: 45px;
+  padding-left: 15%;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#didascalia {
+  position: absolute;
+  padding-top: 80px;
+  padding-left: 40%;
+  padding-right: 10%;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+}
+
+#titolo2 {
+  position: absolute;
+  padding-top: 200px;
+  padding-left: 20%;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+  line-height: 50%;
+}
+/* 
+#concept {
+  line-height: 80%;
+} */
