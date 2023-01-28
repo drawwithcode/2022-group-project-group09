@@ -24,7 +24,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(width / 9, 450);
+  container.position(width / 9, (height * 2) / 3.3);
   container.mousePressed(openLearn);
 
   //pausa pausa
@@ -41,7 +41,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position((width * 4) / 9, 80);
+  container.position((width * 4) / 9, (height * 2) / 16);
   container.mousePressed(openAbout);
 
   //pausa pausa
@@ -58,7 +58,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(1350, 650);
+  container.position((width * 8) / 9, (height * 2) / 2.3);
   container.mousePressed(openDiscover1);
 
   posX = width / 2;
