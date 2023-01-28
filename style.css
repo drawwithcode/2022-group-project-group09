@@ -24,8 +24,8 @@ body {
 } */
 
 #button1 {
-  background-color: black;
-  outline: none;
+  background: none;
+  border: none;
   cursor: context-menu;
   text-align: center;
   position: absolute;
@@ -40,8 +40,8 @@ body {
 }
 
 #button2 {
-  background-color: black;
-  outline: none;
+  background: none;
+  border: none;
   cursor: context-menu;
   text-align: center;
   position: absolute;
@@ -57,11 +57,10 @@ body {
 
 #learn {
   color: white;
-  background-color: black;
-  outline: none;
+  background: none;
+  border: none;
   cursor: context-menu;
   text-align: center;
-
   text-decoration: none;
   font: bold 60px Arial, Helvetica, sans-serif;
 
@@ -73,8 +72,8 @@ body {
 
 #about {
   color: white;
-  background-color: black;
-  outline: none;
+  background: none;
+  border: none;
   cursor: context-menu;
   text-align: center;
 
@@ -144,4 +143,11 @@ body {
 /* 
 #concept {
   line-height: 80%;
+/* @font-face {
+  font-family: monospace;
+  src: url(font\helvetica.otf);
+}
+
+.nuovofont {
+  font-family: monospace;
 } */

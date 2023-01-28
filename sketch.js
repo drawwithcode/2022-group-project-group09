@@ -15,7 +15,7 @@ function setup() {
   container = createElement("div");
   // container.addClass("myContainer");
 
-  var button = createButton("LEARN");
+  var button = createButton("");
   button.id(learn);
   counterP = createP();
 
@@ -24,7 +24,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(width / 9, 450);
+  container.position(width / 9, (height * 2) / 3.3);
   container.mousePressed(openLearn);
 
   //pausa pausa
@@ -41,7 +41,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position((width * 4) / 9, 80);
+  container.position((width * 4) / 9, (height * 2) / 16);
   container.mousePressed(openAbout);
 
   //pausa pausa
@@ -58,7 +58,7 @@ function setup() {
 
   // let enter = createButton("COME AND SEE");
   container.size(320, 50);
-  container.position(1350, 650);
+  container.position((width * 8) / 9, (height * 2) / 2.3);
   container.mousePressed(openDiscover1);
 
   posX = width / 2;
@@ -103,28 +103,28 @@ function draw() {
   // noStroke();
   image(img, width / 6, height / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX - 550, posY - 150, 90);
 
   // fill(255);
   // circle((width * 3) / 6, (height * 3) / 4, 180);
   image(img, (width * 3) / 6, (height * 3) / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX, posY + 200, 90);
 
   // fill(255);
   // circle((width * 5) / 6, height / 4, 180);
   image(img, (width * 5) / 6, height / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX + 500, posY - 150, 90);
 
   // fill(255);
   // circle((width * 5) / 6, (height * 3) / 4, 180);
   image(img, (width * 5) / 6, (height * 3) / 4, 300, 150);
 
-  fill(20);
+  fill(0);
   circle(posX + 500, posY + 200, 90);
 }
 
