@@ -57,7 +57,7 @@ function setup() {
   counterP3.parent(container);
 
   // let enter = createButton("COME AND SEE");
-  container.size(320, 50);
+  container.size(100, 50);
   container.position((width * 8) / 9, (height * 2) / 2.3);
   container.mousePressed(openDiscover1);
 
@@ -104,7 +104,7 @@ function draw() {
   image(img, width / 6, height / 4, 300, 150);
 
   fill(0);
-  circle(posX - 550, posY - 150, 90);
+  circle(posX - 550, posY - 200, 90);
 
   // fill(255);
   // circle((width * 3) / 6, (height * 3) / 4, 180);
@@ -118,7 +118,7 @@ function draw() {
   image(img, (width * 5) / 6, height / 4, 300, 150);
 
   fill(0);
-  circle(posX + 500, posY - 150, 90);
+  circle(posX + 500, posY - 200, 90);
 
   // fill(255);
   // circle((width * 5) / 6, (height * 3) / 4, 180);
