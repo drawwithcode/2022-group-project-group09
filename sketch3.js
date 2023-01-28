@@ -22,6 +22,7 @@ function setup() {
     vy[i] = sin(a);
     x[i] = width / 2 + (vx[i] * width) / 2;
     y[i] = height / 2 + (vy[i] * height) / 2;
+    song = loadSound("assets/lucky_dragons_-_power_melody.mp3");
   }
 
   container = createElement("div");
@@ -60,7 +61,7 @@ function setup() {
 function draw() {
   background("black");
   stroke("white");
-
+  strokeWeight(9);
   for (let i = num; i--; ) {
     for (let j = i; j--; ) {
       d = (x[i] - x[j]) ** 2 + (y[i] - y[j]) ** 2;
@@ -70,11 +71,12 @@ function draw() {
   for (let i = num; i--; ) {
     x[i] += vx[i];
     y[i] += vy[i];
-    if (x[i] < 0 || x[i] > width) vx[i] *= -1;
-    if (y[i] < 0 || y[i] > height) vy[i] *= -1;
+    if (x[i] < 0 || x[i] > width) vx[i] *= -3;
+    if (y[i] < 0 || y[i] > height) vy[i] *= -8;
+
+    loop();
   }
 }
-
 function returnIndex() {
   window.open("index.html", "_self");
 }
