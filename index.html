@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- to correctly identify all characters -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- specifies the title of this particular web page  -->
     <title>Sketch</title>
 
+    <!-- link to a css sheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <!-- link to javascript libraries  -->
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
+    <!-- create a navbar with Look's logo, always on top  -->
     <nav class="navbar">
       <div class="icon-container">
         <a><img src="assets\logoo.png" alt="" /></a>
       </div>
     </nav>
+
+    <!-- connect html pages  -->
     <button id="button2" onclick="location.href='discover1.html'">
       <a><img src="assets\pulsante1.png" alt="" /></a>
     </button>
+    <!-- with the id we call specific style features from the css sheet  -->
     <button id="learn" onclick="location.href='learn.html'">
       <div>
-        <p class="nuovofont">learn</p>
+        <p>learn</p>
       </div>
     </button>
-
     <button id="about" onclick="location.href='about.html'">
       <div>
-        <p class="nuovofont">about</p>
+        <p>about</p>
       </div>
     </button>
 
+    <!-- link to sketch.js   -->
     <script src="sketch.js"></script>
     <!-- <script src="webgazer.js" type="text/javascript"></script>
     <script src="eyetracking.js" type="text/javascript"></script> -->
-    <!-- <div id="occhio1">
-      <img
-        src="./assets/occhietto.png"
-        width="300px"
-        height="150px"
-        alt="MENU"
-      />
-    </div> -->
   </body>
 </html>

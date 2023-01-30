@@ -1,48 +1,41 @@
 const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
 
+//variables are declared
 let container, counterP, counterP2;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
+  //create BUTTON FOR 'INDEX' PAGE
   container = createElement("div");
-  //container.addClass("myContainer");
-
   var button = createButton("");
   button.id(button1);
   counterP = createP();
-
+  //moving elements in the DOM structure
   container.child(button1);
   counterP.parent(container);
-
-  // let enter = createButton("COME AND SEE");
+  //define the features of the button
   container.size(320, 50);
   container.position(50, 50);
   container.mousePressed(returnIndex);
 
-  //pausa pausa
-
+  //create BUTTON FOR 'DISCOVER' PAGE - relative to about
   container = createElement("div");
-  // container.addClass("myContainer");
-
   var button = createButton("");
   button.id(button2);
   counterP2 = createP();
-
+  //moving elements in the DOM structure
   container.child(button2);
   counterP2.parent(container);
-
-  // let enter = createButton("COME AND SEE");
+  //define features of the button
   container.size(100, 50);
   container.position((width * 8) / 9, (height * 2) / 2.3);
   container.mousePressed(openDiscover2);
 }
 
 function draw() {
-  // background(0, 0, 0);
-  // fill(255);
-  // rect(width / 3 - 55, 0, 5, height);
+  //all the text is write in the html page
 }
 
 function returnIndex() {
