@@ -5,6 +5,10 @@ let container, button, counterP;
 
 let mask;
 
+function preload() {
+  img = loadImage("./assets/LEARN.png");
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   mask = createBlurMask(500, 500, 30, 25);
@@ -25,10 +29,10 @@ function setup() {
 }
 
 function draw() {
-  background(250, 200, 40);
-  fill(0);
-  textSize(100);
-  text("discover3", 200, 200);
+  image(img, 0, 0, windowWidth, 4000);
+  // fill(0);
+  // textSize(100);
+  // text("discover1", 200, 200);
   applyMask(mask, mouseX - mask.width / 2, mouseY - mask.height / 2);
 }
 

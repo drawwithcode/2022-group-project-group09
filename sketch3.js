@@ -93,7 +93,7 @@ function openDiscover3() {
   window.open("discover3.html", "_self");
 }
 
-//this function allows the music to start at the click of the mouse
+//this function allows the music to start the music at the click of the mouse
 function mousePressed() {
   canzonedisfondo.play();
   canzonedisfondo.setVolume(50);
