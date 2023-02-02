@@ -238,13 +238,18 @@ Another issue was to find a way to make the theme of the project evident and int
 
 # TEAM
 
-**Sofia Cadisco**
-**Giuliana Concialini**
-**Bianca Oriani**
-**Benedetta Ricciardi**
+## **Sofia Cadisco**
+
+## **Giuliana Concialini**
+
+## **Bianca Oriani**
+
+## **Benedetta Ricciardi**
 
 # COURSE
 
 Creative Coding 2022/2023
-**Politecnico di Milano** – Scuola del Design
-**Faculty**: Michele Mauri, Andrea Benedetti, Tommaso Elli.
+
+## **Politecnico di Milano** – Scuola del Design
+
+## **Faculty**: Michele Mauri, Andrea Benedetti, Tommaso Elli.
