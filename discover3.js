@@ -1,6 +1,6 @@
 const urlString = window.location.href; // Collect the URL string of the page
 let url = new URL(urlString); // Convert it into a parsable URL Object
-
+let img;
 let container, button, counterP;
 
 let mask;
@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, 4000);
   mask = createBlurMask(500, 500, 30, 25);
 
   container = createElement("div");
