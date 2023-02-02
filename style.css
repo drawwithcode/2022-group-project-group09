@@ -6,6 +6,16 @@ body {
   background-repeat: repeat;
 }
 
+#webgazerVideoContainer {
+  visibility: hidden;
+}
+
+/* #webgazerGazeDot {
+  visibility: visible;
+  position: relative;
+  display: inline;
+} */
+
 #button1 {
   background: none;
   border: none;
