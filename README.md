@@ -3,7 +3,7 @@
 This repository is the starting point of the assignments given in the elective course [Creative Coding at Politecnico di Milano](https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=696598&__pj0=0&__pj1=3ed8420c42c849845b5caa3de626e8fc).
 Browse [this website](https://drawwithcode.github.io/) if you want to know more about it.
 
-![](assets-readme\logo.jpg)
+![](./assets-readme/logo.jpg)
 
 # PROJECT IDEA
 
@@ -27,7 +27,7 @@ The project becomes part of an exhibition that has as its content the theme of r
 
 The project consists of six HTML pages: three main pages coupled with three pages representing the 'translation' in code of the visible screen, the so-called 'discover' pages.
 
-![](assets-readme\scheme.png)
+![](./assets-readme/scheme.png)
 
 **index.html** – is the opening page of Look. Four eyes, a metaphor for 'looking beyond our designed screens', follow the user's gaze. The code of this page can be discovered by pressing the 'discover' button, bottom left. Using the 'about' and 'learn' buttons, however, it is possible to continue the experience on the other html pages.
 **about.html** – is the page that tells the concept of the project and informs the user of the thinking behind Look. Again in the bottom right-hand corner is the 'discover' button, which allows the user to discover the code hidden even behind simple text. At the top left, on the other hand, an arrow allows the user to return to the main page.
@@ -238,10 +238,10 @@ Another issue was to find a way to make the theme of the project evident and int
 
 # TEAM
 
-Sofia Cadisco
-Giuliana Concialini
-Bianca Oriani
-Benedetta Ricciardi
+**Sofia Cadisco**
+**Giuliana Concialini**
+**Bianca Oriani**
+**Benedetta Ricciardi**
 
 # COURSE
 
