@@ -6,11 +6,11 @@ let container, button, counterP;
 let mask;
 
 function preload() {
-  img = loadImage("./assets/sketch1.png");
+  img = loadImage("./assets/INDEX.png");
 }
 
 function setup() {
-  createCanvas(windowWidth, 4000);
+  createCanvas(windowWidth, 6000);
   mask = createBlurMask(500, 500, 30, 25);
 
   container = createElement("div");
@@ -29,7 +29,7 @@ function setup() {
 }
 
 function draw() {
-  image(img, 0, 0, windowWidth, 4000);
+  image(img, 0, 0, windowWidth, 6000);
   // fill(0);
   // textSize(100);
   // text("discover1", 200, 200);
