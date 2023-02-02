@@ -238,13 +238,13 @@ Another issue was to find a way to make the theme of the project evident and int
 
 # TEAM
 
-## **Sofia Cadisco**
+# Sofia Cadisco
 
-## **Giuliana Concialini**
+# Giuliana Concialini
 
-## **Bianca Oriani**
+# Bianca Oriani
 
-## **Benedetta Ricciardi**
+# Benedetta Ricciardi
 
 # COURSE
 
